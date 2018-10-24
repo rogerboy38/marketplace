@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/styles/app.css">
+    <title>Enfa Delivery</title>
+  </head>
+  <body>
+    <div class="container-fluid dashboard">
+      <!-- HEADER -->
+      <header class="d-flex flex-column">
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <a href="index.html">
+                <img class="logo-dash" src="src/images/logo.svg" alt="Enfa">
+              </a>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-end">
+              <div class="dashboard__user-name">
+                <ion-icon name="contact"></ion-icon>
+                Buenas tardes <strong> Rubi Vega </strong>
+              </div>
+              <a href="#" class="dashboard__exit"><ion-icon name="log-out"></ion-icon>Salir</a>
+            </div>
+          </div>
+        </header>
+      <!-- END HEADER -->
+
+      <!-- MAIN-->
+      <main>
+        <div class="row">
+          <section class="col-xs-12 col-md-3 dashboard__user-nav">
+            <nav class="menu-desktop">
+              <ul>
+                <li><a href="marketplace.html"><ion-icon name="globe"></ion-icon>Marketplace</a></li>
+                <li><a href="profile.html"><ion-icon name="finger-print"></ion-icon>Mis datos personales</a></li>
+                <li><a href="#"><ion-icon name="document"></ion-icon>Documentos</a></li>
+                <li><a href="#"><ion-icon name="clipboard"></ion-icon>Mis direcciones de Facturación</a></li>
+                <li class="active"><a href="orders.html"><ion-icon name="paper-plane"></ion-icon>Mis envios</a></li>
+                <li><a href="fleet.html"><ion-icon name="bus"></ion-icon></ion-icon>Mis flotas</a></li>
+                <li><a href="#"><ion-icon name="heart"></ion-icon>Favoritos</a></li>
+                <li><a href="#"><ion-icon name="card"></ion-icon>Métodos de Pago</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section class="col-md-9 dashboard__user" role="main">
+            <div class="user-orders">
+              <div class="box box-info">
+                  <div class="subheader d-flex justify-content-between">
+                    <h3 class="m-subheader__title m-subheader__title--separator">Mis Últimos Envios</h3>
+                  </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead class="thead-dark">
+                      <tr>
+                        <th>Order ID</th>
+                        <th>Carga</th>
+                        <th>Tipo</th>
+                        <th>Estatus de carga</th>
+                        <th>Estatus de pago</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td><a href="order-view.html">OR9842</a></td>
+                        <td>CDMX <ion-icon name="arrow-forward"></ion-icon> Tijuana</td>
+                        <td>Caja seca</td>
+                        <td class="order -status"><span class="label label-success">EN TRÁNSITO </span></td>
+                        <td>PAGADO</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">OR1848</a></td>
+                        <td>Denver <ion-icon name="arrow-forward"></ion-icon> Aurora</td>
+                        <td>Caja refrigerada</td>
+                        <td class="order -status"><span class="label label-warning">PROGRAMADO</span></td>
+                        <td>PAGADO</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">OR7429</a></td>
+                        <td>Guadalajara <ion-icon name="arrow-forward"></ion-icon> Baja California</td>
+                        <td>Caja seca</td>
+                        <td class="order -status"><span class="label label-finished">FINALIZADO</span></td>
+                        <td>PAGADO</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">OR7429</a></td>
+                        <td>Morelos <ion-icon name="arrow-forward"></ion-icon> Yucatán </td>
+                        <td>Caja seca</td>
+                        <td class="order -status"><span class="label label-info">ACEPTADO</span></td>
+                        <td>PENDIENTE</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">OR1848</a></td>
+                        <td>Mérida <ion-icon name="arrow-forward"></ion-icon> Tampico</td>
+                        <td>Caja seca</td>
+                        <td class="order -status"><span class="label label-publish">PUBLICADO</span></td>
+                        <td>PAGADO</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">OR7429</a></td>
+                        <td>Zacatecas <ion-icon name="arrow-forward"></ion-icon> Morelos</td>
+                        <td>Caja seca</td>
+                        <td class="order -status"><span class="label label-confirm">Confirmado</span></td>
+                        <td>PENDIENTE</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">OR9842</a></td>
+                        <td>Edo. de México <ion-icon name="arrow-forward"></ion-icon> San Luis</td>
+                        <td>Caja seca</td>
+                        <td class="order -status"><span class="label label-danger">DETENIDO</span></td>
+                        <td>PAGADO</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">OR9842</a></td>
+                        <td>Nayarit <ion-icon name="arrow-forward"></ion-icon> Colima</td>
+                        <td>Caja seca</td>
+                        <td class="order -status"><span class="label label-finishing">Descargando</span></td>
+                        <td>PAGADO</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.table-responsive -->
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer clearfix">
+                  <button type="button" class="btn m-btn--pill btn-metal m-btn--air">Ver todas las ordenes</button>
+                </div>
+                <!-- /.box-footer -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+      <div class="container links">
+        <section class="row">
+          <div class="col-xs-12 col-md-4">
+            <a href="marketplace.html">
+              <img class="logo" src="src/images/logo_white.svg" alt="Enfa">
+            </a>
+            <p>
+              Enfadelivery se encarga de proveer servicios de transporte mediante
+              la ocupación de las capacidades disponibles en la fecha y hora que
+              tu la necesitas.
+            </p>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <h6>Contáctanos</h6>
+            <ul>
+              <li>
+                <a href="#">
+                  <ion-icon name="pin"></ion-icon>
+                  Parque Tecnológico en Prolongación Tecnológico Norte 801, Soriana, 76140 Santiago de Querétaro, Qro.
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="call"></ion-icon>
+                  44 247 15 218
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="mail"></ion-icon>
+                  hola@enfadelivery.com
+                </a>
+              </li>
+              <!--<li>
+                <a href="#">
+                  <ion-icon name="time"></ion-icon>
+                  Lunes - Sábado, 9:00 - 19:00 hrs
+                </a>
+              </li>-->
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <h6>Enlaces</h6>
+            <ul>
+              <li><a href="#">Quiero Enviar</a></li>
+              <li><a href="#">Quiero Transportar</a></li>
+              <li><a href="#">Aviso de Privacidad</a></li>
+              <li><a href="#">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+  </body>
+</html>

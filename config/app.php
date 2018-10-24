@@ -146,6 +146,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Shipu\Themevel\Providers\ThemevelServiceProvider::class,
         Yajra\Datatables\DatatablesServiceProvider::class,
 
         /*
@@ -209,6 +210,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Theme' => Shipu\Themevel\Facades\Theme::class,
 
     ],
 
