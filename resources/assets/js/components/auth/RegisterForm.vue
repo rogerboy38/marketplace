@@ -73,7 +73,7 @@
     },
     methods: {
       submit () {
-        this.form.post('/register')
+        this.form.post('./register')
           .then(response => {
             var component = this;
             setTimeout(function(){

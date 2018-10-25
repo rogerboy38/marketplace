@@ -1,7 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/app-landing.js": "/js/app-landing.js",
-    "/css/all.css": "/css/all.css",
+    "/css/all.css": "./css/all.css",
     "/css/all-landing.css": "/css/all-landing.css",
     "/img/app-bg.png": "/img/app-bg.png",
     "/img/arrow1.png": "/img/arrow1.png",

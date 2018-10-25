@@ -94,7 +94,7 @@
     },
     methods: {
       submit () {
-        this.form.post('/login')
+        this.form.post('marketplace/public/login')
           .then(response => {
             var component = this;
             setTimeout(function(){
