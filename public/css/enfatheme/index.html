@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="src/vendors/bootstrap/css/bootstrap.min.css">
+    <script src="src/vendors/jquery/jquery.js"></script>
+    <script src="src/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="src/styles/app.css">
+    <title>Enfa Delivery</title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-2 order-1 order-sm-1">
+            <a href="/">
+              <img class="logo" src="src/images/logo.svg" alt="Enfa">
+            </a>
+          </div>
+            <ul class="col d-flex align-items-center order-3 order-sm-2 justify-content-center user-nav">
+              <li><a href="#">Quiero Transportar</a></li>
+              <li><a href="#">Quiero Enviar </a></li>
+            </ul>
+          <div class="col col-md-3 d-flex align-items-center user-sign order-2 order-sm-3">
+            <a class="user-sign -in"href="login.html">Entrar</a>
+            |
+            <a class="user-sign -up" href="registrarse.html">Registrarme</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- NAV -->
+   
+    <!-- END NAV -->
+    <main class="home">
+      <section class="hero">
+        <div class="hero-content">
+            <div class="hero-copy">
+                Envía o transporta tu carga
+                <h1>Encuentra o envia tu carga con nosotros.</h1>
+                Somos el primer Marketplace Mexicano
+                especializado en transporte de carga para empresas.
+              </div>
+              <div class="search-form">
+                <fieldset>
+                    <label for="origin">Origen</label>
+                    <input type="text" id="origin" value="CDMX">
+                </fieldset>
+                <fieldset>
+                    <label for="destin">Destino</label>
+                    <input type="text" id="destin" value="Texas">
+                </fieldset>
+                <fieldset>
+                  <label for="date">Fecha</label>
+                  <input type="date">
+                </fieldset>
+                <fieldset>
+                    <label for="">Tipo</label>
+                    <select class="custom-select">
+                      <option selected="">Caja seca</option>
+                      <option value="1">Caja refigerada</option>
+                      <option value="2">Otro</option>
+                    </select>
+                </fieldset>
+                <button class="btn btn-primary">BUSCAR</button>
+              </div>
+        </div>
+      </section>
+      <section class="container enfa-content">
+        <h2 class="text-center">Envía tu carga en 3 pasos 😉</h2>
+        <div class="row enfa-content enfa-steps text-center text-uppercase">
+          <div class="col-xs-12 col-md-4 enfa-step -one">
+            <img src="/src/images/find.svg" alt="">
+            <p class="copy-step">1.Busca y encuentra</p>
+          </div>
+          <div class="col-xs-12 col-md-4 enfa-step -two">
+            <img src="/src/images/cotiza.svg" alt="">
+            <p class="copy-step">2. Espera tu cotización inteligente</p>
+          </div>
+          <div class="col-xs-12 col-md-4 enfa-step -three">
+            <img src="/src/images/paga.svg" alt="">
+            <p class="copy-step">3. Paga y envía</p>
+          </div>
+        </div>
+      </section>
+      <section class="container d-flex align-items-center">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 d-flex flex-column align-items-center
+          justify-content-center services services__send">
+            <div class="send-wrap">
+                <h3>Quiero enviar</h3>
+                <p>
+                  Si quieres envíar tu carga, tenemos la flota perfecta para transportarla
+                </p>
+                <button type="button" class="btn btn-outline-primary">
+                  Click Aquí
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </button>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 d-flex flex-column align-items-center
+          justify-content-center services services__ship">
+            <div class="ship-wrap">
+                <h3>Quiero transportar</h3>
+                <p>
+                  Más ingresos extras, utiliza tu flota al máximo, seguridad en el pago.
+                  <br>
+                  UNETE a nuestro equipo de transportistas AHORA.
+                </p>
+                <button type="button" class="btn btn-outline-secondary">
+                  Click Aquí
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+      <div class="container links">
+        <section class="row">
+          <div class="col-xs-12 col-md-4">
+            <a href="marketplace.html">
+              <img class="logo" src="src/images/logo_white.svg" alt="Enfa">
+            </a>
+            <p>
+              Enfadelivery se encarga de proveer servicios de transporte mediante
+              la ocupación de las capacidades disponibles en la fecha y hora que
+              tu la necesitas.
+            </p>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <h6>Contáctanos</h6>
+              <ul>
+                <li>
+                  <a href="#">
+                    <ion-icon name="pin"></ion-icon>
+                    Parque Tecnológico en Prolongación Tecnológico Norte 801, Soriana, 76140 Santiago de Querétaro, Qro.
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon name="call"></ion-icon>
+                    44 247 15 218
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon name="mail"></ion-icon>
+                    hola@enfadelivery.com
+                  </a>
+                </li>
+                <!--<li>
+                  <a href="#">
+                    <ion-icon name="time"></ion-icon>
+                    Lunes - Sábado, 9:00 - 19:00 hrs
+                  </a>
+                </li>-->
+              </ul>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <h6>Enlaces</h6>
+            <ul>
+              <li><a href="#">Quiero Enviar</a></li>
+              <li><a href="#">Quiero Transportar</a></li>
+              <li><a href="#">Aviso de Privacidad</a></li>
+              <li><a href="#">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+      </section>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+  </body>
+</html>

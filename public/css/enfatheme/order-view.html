@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/styles/app.css">
+    <title>Enfa Delivery</title>
+  </head>
+  <body>
+    <div class="container-fluid dashboard">
+      <!-- HEADER -->
+      <header class="d-flex flex-column">
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <a href="index.html">
+                <img class="logo-dash" src="src/images/logo.svg" alt="Enfa">
+              </a>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-end">
+              <div class="dashboard__user-name">
+                <ion-icon name="contact"></ion-icon>
+                Buenas tardes <strong> Rubi Vega </strong>
+              </div>
+              <a href="#" class="dashboard__exit"><ion-icon name="log-out"></ion-icon>Salir</a>
+            </div>
+          </div>
+        </header>
+      <!-- END HEADER -->
+
+      <!-- MAIN-->
+      <main>
+        <div class="row">
+          <section class="col-xs-12 col-md-3 dashboard__user-nav">
+            <nav class="menu-desktop">
+              <ul>
+                <li><a href="marketplace.html"><ion-icon name="globe"></ion-icon>Marketplace</a></li>
+                <li><a href="profile.html"><ion-icon name="finger-print"></ion-icon>Mis datos personales</a></li>
+                <li><a href="#"><ion-icon name="document"></ion-icon>Documentos</a></li>
+                <li><a href="#"><ion-icon name="clipboard"></ion-icon>Mis direcciones de Facturación</a></li>
+                <li class="active"><a href="orders.html"><ion-icon name="paper-plane"></ion-icon>Mis envios</a></li>
+                <li><a href="fleet.html"><ion-icon name="bus"></ion-icon></ion-icon>Mis flotas</a></li>
+                <li><a href="#"><ion-icon name="heart"></ion-icon>Favoritos</a></li>
+                <li><a href="#"><ion-icon name="card"></ion-icon>Métodos de Pago</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section class="col-md-9 dashboard__user" role="main">
+            <h3>Resumen de tu orden OR9842</h3>
+            <div class="m-portlet m-portlet--tab user-order">
+              <div class="row">
+                <div class="col-sm-12 col-md-8">
+                  <div class="origen">
+                    <div class="city d-flex align-items-end">
+                      <ion-icon name="pin"></ion-icon>
+                      <strong>CDMX</strong>
+                    </div>
+                    <div class="address">
+                      Avenida Horacio #340
+                      Polanco V Sección
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <div class="destination">
+                    <div class="city d-flex align-items-end">
+                      <ion-icon name="pin"></ion-icon>
+                      <strong>TIJUANA</strong>
+                    </div>
+                    <div class="address">
+                      15 de Mayo s/n
+                      Ciudad Cuauhtemóc
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 status">
+                  <h4>Status</h4>
+                  <div class="steps">
+                    <div class="step -one">
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      Aceptado
+
+                      <span>2018/09/13 - 13:00</span>
+                    </div>
+                    <div class="step -two">
+                      <ion-icon name="calendar"></ion-icon>
+                      Enero 26 del 2018 - 15:30:00
+                    </div>
+                    <div class="step -three">
+                      <ion-icon name="rocket"></ion-icon>
+                      En tránsito
+                      <div class="observations">
+                        <strong>Observaciones:</strong><br>
+                        Tu carga está saliendo de San Luis
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <h4 class="col-sm-12">Resumen detallado de la carga</h4>
+                    <div class="col-sm-12 col-md-6 form-group truck-info block">
+                      <h4>Cargo</h4>
+                      <ul class="summary">
+                        <li class="plate"> Placas: 1283-VGN </li>
+                        <li class="cargo-size"> Tamaño de carga: 48ft </li>
+                        <li class="date"> Fecha de entrega: 27 de Julio 2018 </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6 form-group fees block">
+                      <h4>Tarifa de la carga</h4>
+                      <ul class="summary">
+                        <li>Subtotal: $7450.00</li>
+                        <li>Envio: $7450.00</li>
+                        <li>IVA: $7450.00</li>
+                        <li>TOTAL: $13869.00</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+      <div class="container links">
+        <section class="row">
+          <div class="col-xs-12 col-md-4">
+            <a href="marketplace.html">
+              <img class="logo" src="src/images/logo_white.svg" alt="Enfa">
+            </a>
+            <p>
+              Enfadelivery se encarga de proveer servicios de transporte mediante
+              la ocupación de las capacidades disponibles en la fecha y hora que
+              tu la necesitas.
+            </p>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <h6>Contáctanos</h6>
+            <ul>
+              <li>
+                <a href="#">
+                  <ion-icon name="pin"></ion-icon>
+                  Parque Tecnológico en Prolongación Tecnológico Norte 801, Soriana, 76140 Santiago de Querétaro, Qro.
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="call"></ion-icon>
+                  44 247 15 218
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="mail"></ion-icon>
+                  hola@enfadelivery.com
+                </a>
+              </li>
+              <!--<li>
+                <a href="#">
+                  <ion-icon name="time"></ion-icon>
+                  Lunes - Sábado, 9:00 - 19:00 hrs
+                </a>
+              </li>-->
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <h6>Enlaces</h6>
+            <ul>
+              <li><a href="#">Quiero Enviar</a></li>
+              <li><a href="#">Quiero Transportar</a></li>
+              <li><a href="#">Aviso de Privacidad</a></li>
+              <li><a href="#">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+  </body>
+</html>

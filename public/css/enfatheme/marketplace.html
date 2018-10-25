@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/styles/app.css">
+    <title>Enfa Delivery</title>
+  </head>
+  <body>
+    <div class="container-fluid dashboard">
+      <!-- HEADER -->
+      <header class="d-flex flex-column">
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <a href="index.html">
+                <img class="logo-dash" src="src/images/logo.svg" alt="Enfa">
+              </a>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-end">
+              <div class="dashboard__user-name">
+                <ion-icon name="contact"></ion-icon>
+                Buenas tardes <strong> Rubi Vega </strong>
+              </div>
+              <a href="#" class="dashboard__exit"><ion-icon name="log-out"></ion-icon>Salir</a>
+            </div>
+          </div>
+        </header>
+      <!-- END HEADER -->
+
+      <!-- MAIN-->
+      <main>
+
+          <div class="row">
+
+            <section class="col-xs-12 col-md-3 dashboard__user-nav">
+              <nav class="menu-desktop">
+                <ul>
+                  <li class="active"><a href="#"><ion-icon name="globe"></ion-icon>Marketplace</a></li>
+                  <li><a href="profile.html"><ion-icon name="finger-print"></ion-icon>Mis datos personales</a></li>
+                  <li><a href="#"><ion-icon name="document"></ion-icon>Documentos</a></li>
+                  <li><a href="#"><ion-icon name="clipboard"></ion-icon>Mis direcciones de Facturación</a></li>
+                  <li><a href="orders.html"><ion-icon name="paper-plane"></ion-icon>Mis envios</a></li>
+                  <li><a href="fleet.html"><ion-icon name="bus"></ion-icon></ion-icon>Mis flotas</a></li>
+                  <li><a href="#"><ion-icon name="heart"></ion-icon>Favoritos</a></li>
+                  <li><a href="#"><ion-icon name="card"></ion-icon>Métodos de Pago</a></li>
+                </ul>
+              </nav>
+            </section>
+            <section class="col-md-9 dashboard__user" role="main">
+              <div class="dashboard__user__results">
+                <div class="subheader d-flex justify-content-between">
+                  <h3 class="m-subheader__title m-subheader__title--separator">Transporte Disponible</h3>
+                </div>
+                <div class="row d-none">
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                      <span class="info-box-icon bg-aqua"><ion-icon name="settings"></ion-icon></span>
+                      <div class="info-box-content">
+                        <span class="info-box-text">CPU Traffic</span>
+                        <span class="info-box-number">90<small>%</small></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                      <span class="info-box-icon bg-red"><ion-icon name="logo-facebook"></ion-icon></span>
+                      <div class="info-box-content">
+                        <span class="info-box-text">Likes</span>
+                        <span class="info-box-number">41,410</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                      <span class="info-box-icon bg-yellow"><ion-icon name="people"></ion-icon></span>
+                      <div class="info-box-content">
+                        <span class="info-box-text">New Members</span>
+                        <span class="info-box-number">2,000</span>
+                      </div>
+                      <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box">
+                      <span class="info-box-icon bg-green"><ion-icon name="cart"></ion-icon></span>
+                      <div class="info-box-content">
+                        <span class="info-box-text">Sales</span>
+                        <span class="info-box-number">760</span>
+                      </div>
+                      <!-- /.info-box-content -->
+                    </div>
+                </div>
+                </div>
+                <form class="row form__dashboard">
+                  <div class="col-xs-12  col-md-3">
+                    <label for="">Origen</label>
+                    <input type="text" class="form-control" value="CDMX">
+                  </div>
+                  <div class="col-xs-12  col-md-3">
+                    <label for="">Destino</label>
+                    <input type="text" class="form-control" value="Tijuana">
+                  </div>
+                  <div class="col-xs-12  col-md-2">
+                    <label for="">Fecha</label>
+                    <input type="date" class="form-control">
+                  </div>
+                  <div class="col-xs-12  col-md-2">
+                    <label for="">Tipo</label>
+                    <select class="custom-select">
+                      <option selected>Caja seca</option>
+                      <option value="1">Caja refigerada</option>
+                      <option value="2">Otro</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-12 col-md-2">
+                    <label for="">Tamaño carga</label>
+                    <select class="custom-select">
+                      <option selected>Todas</option>
+                      <option value="1">48 ft</option>
+                      <option value="2">53ft</option>
+                      <option value="3">Full</option>
+                      <option value="4">Torton</option>
+                      <option value="5">Rabón</option>
+                      <option value="6">Camioneta 5.5</option>
+                      <option value="7">Camioneta 3.5</option>
+                      <option value="8">Camioneta 1.5</option>
+                    </select>
+                  </div>
+                </form>
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Id</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Tipo de carga</th>
+                      <th scope="col">Carga</th>
+                      <th scope="col">Tamaño de caja</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>disponible</td>
+                      <td>Caja seca</td>
+                      <td>CDMX <ion-icon name="arrow-forward"></ion-icon> Tijuana</td>
+                      <td>48 ft</td>
+                      <td><a class="quote-cargo" href="quoting.html">Cotizar</a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>disponible</td>
+                      <td>Caja refrigerada</td>
+                      <td>Thornton <ion-icon name="arrow-forward"></ion-icon> Denver</td>
+                      <td>48 ft</td>
+                      <td><a class="quote-cargo" href="registrarse.html">Cotizar</a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>disponible</td>
+                      <td>Caja refrigerada</td>
+                      <td>Guadalajara <ion-icon name="arrow-forward"></ion-icon> San Luis</td>
+                      <td>Rabón</td>
+                      <td><a class="quote-cargo" href="#">Cotizar</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+              </div>
+            </section>
+          </div>
+        </main>
+    </div>
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+      <div class="container links">
+        <section class="row">
+          <div class="col-xs-12 col-md-4">
+            <a href="marketplace.html">
+              <img class="logo" src="src/images/logo_white.svg" alt="Enfa">
+            </a>
+            <p>
+              Enfadelivery se encarga de proveer servicios de transporte mediante
+              la ocupación de las capacidades disponibles en la fecha y hora que
+              tu la necesitas.
+            </p>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <h6>Contáctanos</h6>
+            <ul>
+              <li>
+                <a href="#">
+                  <ion-icon name="pin"></ion-icon>
+                  Parque Tecnológico en Prolongación Tecnológico Norte 801, Soriana, 76140 Santiago de Querétaro, Qro.
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="call"></ion-icon>
+                  44 247 15 218
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="mail"></ion-icon>
+                  hola@enfadelivery.com
+                </a>
+              </li>
+              <!--<li>
+                <a href="#">
+                  <ion-icon name="time"></ion-icon>
+                  Lunes - Sábado, 9:00 - 19:00 hrs
+                </a>
+              </li>-->
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <h6>Enlaces</h6>
+            <ul>
+              <li><a href="#">Quiero Enviar</a></li>
+              <li><a href="#">Quiero Transportar</a></li>
+              <li><a href="#">Aviso de Privacidad</a></li>
+              <li><a href="#">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+  </body>
+</html>

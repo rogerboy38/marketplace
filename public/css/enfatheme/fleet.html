@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+    <script src="src/vendors/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="src/vendors/bootstrap/css/bootstrap.min.css">
+    <script src="src/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/modal.js"></script>
+    <link rel="stylesheet" href="src/styles/app.css">
+    <title>Enfa Delivery</title>
+  </head>
+  <body>
+    <div class="container-fluid dashboard">
+      <!-- HEADER -->
+      <header class="d-flex flex-column">
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <a href="index.html">
+                <img class="logo-dash" src="src/images/logo.svg" alt="Enfa">
+              </a>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-end">
+              <div class="dashboard__user-name">
+                <ion-icon name="contact"></ion-icon>
+                Buenas tardes <strong> Rubi Vega </strong>
+              </div>
+              <a href="#" class="dashboard__exit"><ion-icon name="log-out"></ion-icon>Salir</a>
+            </div>
+          </div>
+        </header>
+      <!-- END HEADER -->
+
+      <!-- MAIN-->
+      <main>
+        <div class="row">
+          <section class="col-xs-12 col-md-3 dashboard__user-nav">
+            <nav class="menu-desktop">
+              <ul>
+                <li><a href="marketplace.html"><ion-icon name="globe"></ion-icon>Marketplace</a></li>
+
+                <li><a href="profile.html"><ion-icon name="finger-print"></ion-icon>Mis datos personales</a></li>
+                <li><a href="#"><ion-icon name="document"></ion-icon>Documentos</a></li>
+                <li><a href="#"><ion-icon name="clipboard"></ion-icon>Mis direcciones de Facturación</a></li>
+
+                <li><a href="orders.html"><ion-icon name="paper-plane"></ion-icon>Mis envios</a></li>
+                <li class="active"><a href="fleet.html"><ion-icon name="bus"></ion-icon></ion-icon>Mis flotas</a></li>
+                <li><a href="#"><ion-icon name="heart"></ion-icon>Favoritos</a></li>
+                <li><a href="#"><ion-icon name="card"></ion-icon>Métodos de Pago</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section class="col-md-9 dashboard__user" role="main">
+            <div class="fleet">
+              <div class="subheader d-flex justify-content-between">
+                <h3 class="m-subheader__title m-subheader__title--separator">Mis Flotas</h3>
+                <a class="btn m-btn--pill m-btn--air btn-danger"  href="edit-fleet.html">
+                  <ion-icon name="add"></ion-icon>
+                  AGREGAR UNA FLOTA
+                </a>
+              </div>
+              <div class="collapse form-fleet" id="collapseFormAddFleet">
+                <form class="m-portlet row">
+                 <div class="col-sm-12 col-md-6 col-lg-6 form-group">
+                   <label for="placa">Matrícula</label>
+                    <input class="form-control" type="text">
+
+                 </div>
+                 <div class="col-sm-12 col-md-6 col-lg-6 form-group">
+                  <label for="placa">Año</label>
+                    <input class="form-control" type="number">
+
+                 </div>
+                 <div class="col-sm-12 col-md-6 col-lg-3 form-group">
+                  <label for="sel1">Caja</label>
+                  <select class="form-control">
+                    <option>Caja seca</option>
+                    <option>Caja refrigerada</option>
+                    <option>Otra</option>
+                  </select>
+                 </div>
+                 <div class="col-sm-12 col-md-6 col-lg-3 form-group">
+                  <label for="sel1">Tipo</label>
+                  <select class="form-control">
+                    <option>48 ft</option>
+                    <option>53 ft</option>
+                    <option>full</option>
+                    <option>Otro</option>
+                  </select>
+                 </div>
+                 <div class="col-sm-12 col-md-6 col-lg-3 form-group pt-checkbox">
+                  <label class="m-checkbox form-control">
+                    <input type="checkbox" checked> GPS
+                  </label>
+                 </div>
+                 <div class="col-sm-12 col-md-6 col-lg-3 form-group pt-checkbox">
+                  <label class="m-checkbox form-control">
+                    <input type="checkbox" checked="checked"> Seguro
+                  </label>
+                 </div>
+                 <div class="col-sm-6">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="inputGroupFile01">
+                      <label class="custom-file-label" for="inputGroupFile01">Carta Porte</label>
+                    </div>
+                 </div>
+                 <div class="form-group col-lg-12 text-right">
+                  <button type="button" class="btn m-btn--pill m-btn--air btn-warning">GUARDAR</button>
+                 </div>
+                </form>
+              </div>
+              <div class="table-fleet mt-4">
+                  <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Vehículo</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Tipo</th>
+                          <th scope="col">Acciones</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mercedes-Benz Blanco</td>
+                          <td> <span class="label label-info">Asignado</span></td>
+                          <td>Camión</td>
+                          <td>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <ion-icon name="settings"></ion-icon>
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="edit-fleet.html">
+                                    <ion-icon name="create"></ion-icon>
+                                    Editar
+                                  </a>
+                                  <a class="dropdown-item delete" href="javascript:void(0);">
+                                      <ion-icon name="trash"></ion-icon>
+                                    Eliminar
+                                  </a>
+                                </div>
+                              </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Fuso Rojo</td>
+                          <td><span class="label label-warning">En taller</span></td>
+                          <td>Trailer</td>
+                          <td>
+                              <div class="btn-group">
+                                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <ion-icon name="settings"></ion-icon>
+                                  </button>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="edit-fleet.html">
+                                      <ion-icon name="create"></ion-icon>
+                                      Editar
+                                    </a>
+                                    <a class="dropdown-item delete" href="javascript:void(0);">
+                                        <ion-icon name="trash"></ion-icon>
+                                      Eliminar
+                                    </a>
+                                  </div>
+                                </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Freightliner gris</td>
+                          <td><span class="label label-success">Disponible</span></td>
+                          <td>Camión</td>
+                          <td>
+                              <div class="btn-group">
+                                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <ion-icon name="settings"></ion-icon>
+                                  </button>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="edit-fleet.html">
+                                      <ion-icon name="create"></ion-icon>
+                                      Editar
+                                    </a>
+                                    <a class="dropdown-item delete" href="javascript:void(0);">
+                                        <ion-icon name="trash"></ion-icon>
+                                      Eliminar
+                                    </a>
+                                  </div>
+                                </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                  </table>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="modal-mask">
+          <div class="modal-wrapper">
+            <div class="modal-container text-center">
+              <p>
+                ¿Deseas eliminar completamente
+                <br>
+                <strong>Mercedes-Benz Blanco</strong>
+                <br>
+                de tu lista de flotas?
+              </p>
+              <button class="btn m-btn--pill m-btn--air btn-danger">Eliminar</button>
+              <button class="btn m-btn--pill btn-secondary cancel">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+        <div class="container links">
+            <section class="row">
+                <div class="col-xs-12 col-md-4">
+                    <a href="marketplace.html">
+                        <img class="logo" src="src/images/logo_white.svg" alt="Enfa">
+                    </a>
+                    <p>
+                        Enfadelivery se encarga de proveer servicios de transporte mediante
+                        la ocupación de las capacidades disponibles en la fecha y hora que
+                        tu la necesitas.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h6>Contáctanos</h6>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="pin"></ion-icon>
+                                Parque Tecnológico en Prolongación Tecnológico Norte 801, Soriana, 76140 Santiago de Querétaro, Qro.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="call"></ion-icon>
+                                44 247 15 218
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="mail"></ion-icon>
+                                hola@enfadelivery.com
+                            </a>
+                        </li>
+                        <!--<li>
+                          <a href="#">
+                            <ion-icon name="time"></ion-icon>
+                            Lunes - Sábado, 9:00 - 19:00 hrs
+                          </a>
+                        </li>-->
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h6>Enlaces</h6>
+                    <ul>
+                        <li><a href="#">Quiero Enviar</a></li>
+                        <li><a href="#">Quiero Transportar</a></li>
+                        <li><a href="#">Aviso de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+  </body>
+</html>

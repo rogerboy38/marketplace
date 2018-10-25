@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="src/vendors/bootstrap/css/bootstrap.min.css">
+    <script src="src/vendors/jquery/jquery.js"></script>
+    <script src="src/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="src/styles/app.css">
+    <title>Enfa Delivery</title>
+    <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid dashboard">
+      <!-- HEADER -->
+      <header class="d-flex flex-column">
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <a href="index.html">
+                <img class="logo-dash" src="src/images/logo.svg" alt="Enfa">
+              </a>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-end">
+              <div class="dashboard__user-name">
+                <ion-icon name="contact"></ion-icon>
+                Buenas tardes <strong> Rubi Vega </strong>
+              </div>
+              <a href="#" class="dashboard__exit"><ion-icon name="log-out"></ion-icon>Salir</a>
+            </div>
+          </div>
+        </header>
+      <!-- END HEADER -->
+
+      <!-- MAIN-->
+      <main>
+
+        <div class="row">
+
+          <section class="col-xs-12 col-md-3 dashboard__user-nav">
+            <nav class="menu-desktop">
+              <ul>
+                <li><a href="marketplace.html"><ion-icon name="globe"></ion-icon>Marketplace</a></li>
+                <li><a href="profile.html"><ion-icon name="finger-print"></ion-icon>Mis datos personales</a></li>
+                <li><a href="#"><ion-icon name="document"></ion-icon>Documentos</a></li>
+                <li><a href="#"><ion-icon name="clipboard"></ion-icon>Mis direcciones de Facturación</a></li>
+                <li><a href="orders.html"><ion-icon name="paper-plane"></ion-icon>Mis envios</a></li>
+                <li class="active"><a href="fleet.html"><ion-icon name="bus"></ion-icon></ion-icon>Mis flotas</a></li>
+                <li><a href="#"><ion-icon name="heart"></ion-icon>Favoritos</a></li>
+                <li><a href="#"><ion-icon name="card"></ion-icon>Métodos de Pago</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section class="col-md-9 dashboard__user" role="main">
+              <h3>MODIFICAR VEHÍCULO (MERCEDES BENZ ROJO)</h3>
+            <div class="m-portlet m-portlet--tab fleet-edit">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label for="">
+                      Nombre del vehículo
+                      <span class="badge badge-info" data-toggle="tooltip"
+                      data-placement="top" title=""
+                      data-original-title="Nombre con el cuál deseas identificar este vehículo">?</span>
+                    </label>
+
+                    <input class="form-control" type="text" placeholder="Ej. Mercedes-Benz Blanco">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label for="">Matricula</label>
+                    <input class="form-control" type="text" placeholder="XXXX-XXXX">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                  <div class="form-group">
+                    <label for="">Marca</label>
+                    <input class="form-control" type="text" placeholder="Ej. Honda, VW, etc.">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                  <div class="form-group">
+                    <label for="">
+                      Modelo
+                      <span class="badge badge-info" data-toggle="tooltip"
+                      data-placement="top" title=""
+                      data-original-title="Modelo del vehículo">?</span>
+                    </label>
+                    <input class="form-control" type="text" placeholder="Ej. Honda, VW, etc.">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                  <div class="form-group">
+                    <label for="">Año</label>
+                    <input class="form-control" type="number">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 form-group">
+                  <label for="sel1">Caja</label>
+                  <select class="form-control">
+                    <option>Caja seca</option>
+                    <option>Caja refrigerada</option>
+                    <option>Otra</option>
+                  </select>
+                 </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 form-group">
+                  <label for="sel1">Tipo</label>
+                  <select class="form-control">
+                    <option>48 ft</option>
+                    <option>53 ft</option>
+                    <option>full</option>
+                    <option>Otro</option>
+                  </select>
+                 </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 form-group pt-checkbox">
+                  <label class="m-checkbox form-control">
+                    <input type="checkbox"> GPS
+                  </label>
+                 </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 form-group pt-checkbox">
+                  <label class="m-checkbox form-control">
+                    <input type="checkbox"> Seguro
+                  </label>
+                 </div>
+                <h3 class="col-sm-12">Información Adicional</h3>
+                <div class="col-sm-12 col-md-4">
+                     <div class="form-group">
+                       <label for="veh_coseguro">Compañía de Seguros</label>
+                       <input type="text" id="veh_coseguro" name="veh_coseguro" class="form-control" _vkenabled="true" _originaltype="text">
+                     </div>
+                   </div>
+                <div class="col-sm-12 col-md-4">
+                     <div class="form-group">
+                       <label for="veh_poliza">Póliza de Seguro</label>
+                       <input type="text" id="veh_poliza" name="veh_poliza" class="form-control" _vkenabled="true">
+                     </div>
+                   </div>
+                <div class="col-sm-12 col-md-4">
+                     <div class="form-group">
+                       <label for="veh_poliza_vigencia">Vigencia Poliza</label>
+                       <div class="input-group">
+                          <input type="date" id="veh_poliza_vigencia" name="veh_poliza_vigencia" data-date-format="dd-mm-yyyy" class="form-control"  _vkenabled="true">
+                      </div>
+                     </div>
+                   </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="custom-file-label" for="inputGroupFile01">Carta Porte</label>
+                     <div class="custom-file">
+                       <input type="file" class="custom-file-input" id="inputGroupFile01">
+                     </div>
+
+                  </div>
+                </div>
+                <div class="col-md-12 text-right">
+      						<button type="reset" class="btn m-btn--pill m-btn--air btn-warning">Guardar</button>
+      						<button type="reset" href="fleet.html" class="btn m-btn--pill btn-secondary">Cancelar</button>
+      					</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+        <div class="container links">
+            <section class="row">
+                <div class="col-xs-12 col-md-4">
+                    <a href="marketplace.html">
+                        <img class="logo" src="src/images/logo_white.svg" alt="Enfa">
+                    </a>
+                    <p>
+                        Enfadelivery se encarga de proveer servicios de transporte mediante
+                        la ocupación de las capacidades disponibles en la fecha y hora que
+                        tu la necesitas.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h6>Contáctanos</h6>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="pin"></ion-icon>
+                                Parque Tecnológico en Prolongación Tecnológico Norte 801, Soriana, 76140 Santiago de Querétaro, Qro.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="call"></ion-icon>
+                                44 247 15 218
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="mail"></ion-icon>
+                                hola@enfadelivery.com
+                            </a>
+                        </li>
+                        <!--<li>
+                          <a href="#">
+                            <ion-icon name="time"></ion-icon>
+                            Lunes - Sábado, 9:00 - 19:00 hrs
+                          </a>
+                        </li>-->
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h6>Enlaces</h6>
+                    <ul>
+                        <li><a href="#">Quiero Enviar</a></li>
+                        <li><a href="#">Quiero Transportar</a></li>
+                        <li><a href="#">Aviso de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+  </body>
+</html>
